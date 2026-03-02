@@ -81,6 +81,97 @@
             </div>
         </section>
 
+        <!-- Usage Flow Section -->
+        <section class="usage-flow">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p class="usage-flow-label">Usage</p>
+                    <h2 class="section-title">Build Slides Without<br>Breaking Your Flow</h2>
+                    <p class="section-subtitle">Create, revise, and share slides from the same terminal where you write code.</p>
+                </div>
+
+                <div class="usage-timeline">
+                    <div class="usage-step fade-in">
+                        <div class="usage-step-marker">
+                            <span class="usage-step-num">1</span>
+                        </div>
+                        <div class="usage-step-body">
+                            <h3>Prompt Between Commits</h3>
+                            <p>Just tell Claude Code "Create 5 slides for tomorrow's sprint review." Point it at your project path and it reads sprint context automatically. No need to stop coding.</p>
+                            <div class="usage-code-snippet">
+                                <div class="usage-code-header">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <pre><code><span class="prompt">$</span> claude "Create 5 slides for tomorrow's sprint review.
+  Summarize the sprint from ./my-project"</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="usage-step fade-in">
+                        <div class="usage-step-marker">
+                            <span class="usage-step-num">2</span>
+                        </div>
+                        <div class="usage-step-body">
+                            <h3>AI Generates Your Deck</h3>
+                            <p>The AI agent creates MDX files and your slides appear in the browser in real time. Hot reload updates the preview instantly every time a file is saved.</p>
+                            <div class="usage-preview-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                                <span>Auto-generated slide-01.mdx → slide-05.mdx</span>
+                                <span class="usage-live-dot"></span>
+                                <span class="usage-live-text">Live Preview</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="usage-step fade-in">
+                        <div class="usage-step-marker">
+                            <span class="usage-step-num">3</span>
+                        </div>
+                        <div class="usage-step-body">
+                            <h3>Revise from the Terminal</h3>
+                            <p>"Add an architecture diagram to slide 3." "Make the summary slide more concise." Refine your deck with the same workflow you use for code.</p>
+                            <div class="usage-code-snippet">
+                                <div class="usage-code-header">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <pre><code><span class="prompt">></span> Add an architecture diagram to slide 3
+<span class="prompt">></span> Make the summary slide more concise</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="usage-step fade-in">
+                        <div class="usage-step-marker">
+                            <span class="usage-step-num">4</span>
+                        </div>
+                        <div class="usage-step-body">
+                            <h3>Present & Share Instantly</h3>
+                            <p>Jump straight into presenter mode for your meeting, export to PDF/PPTX, or share a live URL with your team via Cloudflare Tunnel.</p>
+                            <div class="usage-share-options">
+                                <span class="usage-option">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                    Presenter Mode
+                                </span>
+                                <span class="usage-option">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                    PDF / PPTX
+                                </span>
+                                <span class="usage-option">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                                    Tunnel Sharing
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Concept / Value Props -->
         <section class="concept">
             <div class="container">

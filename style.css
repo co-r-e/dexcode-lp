@@ -381,9 +381,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: 700;
-    color: var(--success);
+    color: #4A90D9;
     background-color: #ffffff;
-    border: 1.5px solid rgba(16, 185, 129, 0.3);
+    border: 1.5px solid rgba(74, 144, 217, 0.3);
     border-radius: var(--radius-md);
 }
 
@@ -391,16 +391,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--success);
+    background-color: #4A90D9;
     display: inline-block;
-    box-shadow: 0 0 6px rgba(16, 185, 129, 0.5);
+    box-shadow: 0 0 6px rgba(74, 144, 217, 0.5);
     animation: pulse-glow 2s ease-in-out infinite;
     flex-shrink: 0;
 }
 
 @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 6px rgba(16, 185, 129, 0.5); }
-    50% { box-shadow: 0 0 14px rgba(16, 185, 129, 0.9); }
+    0%, 100% { box-shadow: 0 0 6px rgba(74, 144, 217, 0.5); }
+    50% { box-shadow: 0 0 14px rgba(74, 144, 217, 0.9); }
 }
 
 /* Hero Visual (Code Window) */
@@ -445,9 +445,174 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.8;
 }
 
-.prompt { color: var(--success); font-weight: bold; margin-right: 8px; }
+.prompt { color: #4A90D9; font-weight: bold; margin-right: 8px; }
 .ai-response { color: #888; display: block; margin-top: 8px; font-style: italic; }
-.success { color: var(--success); display: block; margin-top: 8px; }
+.success { color: #4A90D9; display: block; margin-top: 8px; }
+
+/* Usage Flow Section */
+.usage-flow {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+}
+
+.usage-flow-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: transparent;
+    background-image: linear-gradient(135deg, var(--accent-color), #4A90D9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.usage-timeline {
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.usage-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 19px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--border-color), rgba(2, 0, 26, 0.15), var(--border-color));
+}
+
+.usage-step {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 28px;
+    padding-bottom: 48px;
+    position: relative;
+}
+
+.usage-step:last-child {
+    padding-bottom: 0;
+}
+
+.usage-step-marker {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.usage-step-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.usage-step-body {
+    padding-top: 6px;
+}
+
+.usage-step-body h3 {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.usage-step-body > p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.usage-code-snippet {
+    background-color: var(--code-bg);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    font-family: var(--font-mono);
+}
+
+.usage-code-header {
+    padding: 10px 14px;
+    display: flex;
+    gap: 6px;
+    background-color: #2d2d2d;
+}
+
+.usage-code-snippet pre {
+    padding: 16px;
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.8;
+    color: var(--code-text);
+    overflow-x: auto;
+}
+
+.usage-preview-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    color: var(--text-light);
+    flex-wrap: wrap;
+}
+
+.usage-preview-badge svg {
+    color: var(--accent-color);
+    flex-shrink: 0;
+}
+
+.usage-live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4A90D9;
+    animation: pulse-glow-blue 2s ease-in-out infinite;
+    margin-left: 4px;
+    flex-shrink: 0;
+}
+
+@keyframes pulse-glow-blue {
+    0%, 100% { box-shadow: 0 0 6px rgba(74, 144, 217, 0.5); }
+    50% { box-shadow: 0 0 14px rgba(74, 144, 217, 0.9); }
+}
+
+.usage-live-text {
+    font-weight: 600;
+    color: #4A90D9;
+    font-size: 0.85rem;
+}
+
+.usage-share-options {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.usage-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-color);
+}
 
 /* Concept Section */
 .concept {
@@ -609,7 +774,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--success);
+    color: transparent;
+    background-image: linear-gradient(135deg, var(--accent-color), #4A90D9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
     margin-bottom: 16px;
 }
 
@@ -769,6 +938,50 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero-actions {
         flex-direction: column;
+    }
+
+    .usage-flow {
+        padding: 64px 0;
+    }
+
+    .usage-step {
+        grid-template-columns: 32px 1fr;
+        gap: 16px;
+        padding-bottom: 36px;
+    }
+
+    .usage-timeline::before {
+        left: 15px;
+    }
+
+    .usage-step-num {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .usage-step-body h3 {
+        font-size: 1.15rem;
+    }
+
+    .usage-code-snippet pre {
+        font-size: 0.75rem;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+
+    .usage-preview-badge {
+        font-size: 0.8rem;
+        padding: 10px 14px;
+    }
+
+    .usage-share-options {
+        gap: 8px;
+    }
+
+    .usage-option {
+        padding: 6px 12px;
+        font-size: 0.8rem;
     }
 
     .concept,
