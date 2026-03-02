@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://co-r-e.github.io/nipry-lp/sitemap.xml
