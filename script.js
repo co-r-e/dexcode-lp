@@ -36,18 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const slide = document.createElement('div');
             slide.classList.add('slide-thumbnail');
             
-            // "AI First" gradient variants - Vibrant Tech Colors
+            // Warm pop gradients - Yellow, Orange, Red, Coral
             const gradients = [
-                ['#2563eb', '#06b6d4'], // Blue -> Cyan
-                ['#7c3aed', '#d946ef'], // Violet -> Fuchsia
-                ['#4f46e5', '#9333ea'], // Indigo -> Purple
-                ['#059669', '#2dd4bf'], // Emerald -> Teal
-                ['#ea580c', '#e11d48'], // Orange -> Rose
-                ['#facc15', '#f97316'], // Yellow -> Orange
-                ['#84cc16', '#10b981'], // Lime -> Emerald
-                ['#f472b6', '#ef4444'], // Pink -> Red
-                ['#06b6d4', '#3b82f6'], // Cyan -> Blue
-                ['#e879f9', '#a855f7'], // Fuchsia -> Purple
+                ['#facc15', '#f59e0b'], // Yellow -> Amber
+                ['#fbbf24', '#f97316'], // Amber -> Orange
+                ['#f97316', '#ef4444'], // Orange -> Red
+                ['#fb923c', '#f43f5e'], // Light Orange -> Rose
+                ['#fde047', '#fb923c'], // Light Yellow -> Orange
+                ['#ef4444', '#dc2626'], // Red -> Dark Red
+                ['#f59e0b', '#ea580c'], // Amber -> Deep Orange
+                ['#fcd34d', '#f87171'], // Pale Yellow -> Light Red
+                ['#f43f5e', '#e11d48'], // Rose -> Crimson
+                ['#fbbf24', '#ef4444'], // Amber -> Red
             ];
 
             const variant = gradients[Math.floor(Math.random() * gradients.length)];
