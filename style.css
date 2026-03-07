@@ -1462,15 +1462,29 @@ h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
     }
 
+    .code-window,
+    .hero-terminal,
+    .usage-code-snippet,
+    .code-block {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
     .code-content {
         padding: 16px;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .code-content .code-line {
         white-space: nowrap;
     }
 
-    .hero-terminal {
-        max-width: 100%;
+    .code-block pre {
+        font-size: 0.75rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .btn {
